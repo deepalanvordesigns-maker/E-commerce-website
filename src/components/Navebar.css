@@ -1,0 +1,63 @@
+.navebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 30px;
+    background:#3b1a4a;
+      color: #ff8a6b;
+     font-family: "Poppins", Arial, sans-serif;
+
+  
+}
+
+.logo {
+    font-size: 44px;
+    font-weight: bold;
+    color: #ff8a6b;
+     font-family: "Poppins", Arial, sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    font-size: 20px;
+     color: #ff8a6b;
+      font-family: "Poppins", Arial, sans-serif;
+}
+
+.search {
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.badge {
+    background:#ffe3da;
+    border-radius: 50%;
+    padding: 1px 6px;
+    font-size: 15px;
+   
+}
+
+.account-btn {
+ background:#ffe3da;
+    padding: 8px 16px;
+    border-radius: 8px;
+     color: black;
+}
+.logos{
+    color: #ff8a6b;
+    font-size: 25px;
+}
