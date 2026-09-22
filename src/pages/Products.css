@@ -1,0 +1,242 @@
+.products-page {
+  background: #fff;
+  color: #222;
+}
+
+.pp-layout {
+  display: flex;
+  gap: 50px;
+  padding: 50px 6%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ---------- sidebar ---------- */
+.pp-sidebar {
+  flex: 0 0 260px;
+}
+
+.pp-sidebar h4 {
+  font-size: 16px;
+  margin: 26px 0 14px;
+}
+
+.pp-sidebar h4:first-child {
+  margin-top: 0;
+}
+
+.pp-search {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pp-search input {
+  flex: 1;
+  border: none;
+  padding: 10px 12px;
+  outline: none;
+  font-size: 13px;
+}
+
+.pp-search button {
+  border: none;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.pp-range {
+  width: 100%;
+  accent-color: #3b1a4a;
+}
+
+.pp-range-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+.pp-side-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pp-side-list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.pp-thumb {
+  width: 55px;
+  height: 55px;
+  background: #eee;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.pp-side-list p {
+  margin: 0 0 2px;
+  font-size: 13px;
+}
+
+.pp-side-list span {
+  font-size: 13px;
+  color: #3b1a4a;
+  font-weight: 600;
+}
+
+.pp-side-list span s {
+  color: #999;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+/* ---------- main ---------- */
+.pp-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.pp-breadcrumb {
+  color: #888;
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.pp-main h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 18px;
+  color: #222;
+}
+
+.pp-desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 0 30px;
+}
+
+.pp-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pp-toolbar select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pp-card {
+  position: relative;
+  text-align: left;
+}
+
+.pp-sale {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.pp-img-wrap {
+  background: #f6f6f6;
+  border-radius: 6px;
+  height: 220px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.pp-img-wrap img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.pp-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.pp-price {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: #222;
+}
+
+.pp-price s {
+  color: #999;
+  margin-right: 8px;
+}
+
+.pp-btn {
+  padding: 10px 20px;
+  border: 1px solid #222;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.pp-btn:hover {
+  background: #3b1a4a;
+  color: #fff;
+  border-color: #3b1a4a;
+}
+
+.pp-empty {
+  color: #888;
+  margin-top: 30px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1000px) {
+  .pp-layout { flex-direction: column; }
+  .pp-sidebar { flex: none; }
+  .pp-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 550px) {
+  .pp-grid { grid-template-columns: 1fr; }
+}
+
+.pp-thumb {
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: #eee;
+}

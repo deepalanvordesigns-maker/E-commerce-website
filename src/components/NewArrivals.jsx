@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCart } from "../context/CartContext";
 import "./NewArrivals.css";
 
 const newProducts = [

@@ -1,0 +1,300 @@
+.qv-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.qv-modal {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 30px;
+}
+
+.qv-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.qv-body {
+  display: flex;
+  gap: 34px;
+}
+
+/* ---- gallery ---- */
+.qv-gallery {
+  flex: 0 0 340px;
+  position: relative;
+}
+
+.qv-main-img {
+  height: 320px;
+  display: grid;
+  place-items: center;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.qv-main-img img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.qv-nav {
+  position: absolute;
+  top: 45%;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.qv-nav.left { left: 4px; }
+.qv-nav.right { right: 4px; }
+
+.qv-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.qv-thumb {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.qv-thumb.active {
+  border: 2px solid #3b1a4a;
+}
+
+.qv-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---- details ---- */
+.qv-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.qv-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.qv-top-row h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.qv-wish {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qv-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0 4px;
+}
+
+.qv-now {
+  font-size: 24px;
+  font-weight: 800;
+  color: #222;
+}
+
+.qv-mrp {
+  font-size: 13px;
+  color: #888;
+}
+
+.qv-save {
+  padding: 4px 10px;
+  border: 1px solid #f3c9c9;
+  border-radius: 6px;
+  background: #fdecec;
+  color: #c0392b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.qv-tax {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 20px;
+}
+
+.qv-section {
+  margin-bottom: 22px;
+}
+
+.qv-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin: 0 0 10px;
+}
+
+.qv-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.qv-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  color: #555;
+}
+
+.qv-color.active {
+  border: 2px solid #3b1a4a;
+}
+
+.qv-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.qv-sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.qv-size {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.qv-size.active {
+  border: 2px solid #3b1a4a;
+  color: #3b1a4a;
+  font-weight: 700;
+}
+
+.qv-qty {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 6px 16px;
+}
+
+.qv-qty button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #3b1a4a;
+}
+
+.qv-total {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.qv-actions {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 24px;
+}
+
+.qv-add, .qv-buy {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.qv-add {
+  background: #222;
+  color: #fff;
+}
+
+.qv-buy {
+  background: #3b1a4a;
+  color: #fff;
+}
+
+.qv-add:hover { background: #3b1a4a; }
+.qv-buy:hover { background: #ff8a6b; }
+
+.qv-trust {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  font-size: 12px;
+  color: #666;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ---- responsive ---- */
+@media (max-width: 750px) {
+  .qv-body { flex-direction: column; }
+  .qv-gallery { flex: none; }
+}

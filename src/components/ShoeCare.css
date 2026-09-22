@@ -1,0 +1,113 @@
+.sc-wrap {
+  background: linear-gradient(180deg, #f3ece2, #ffffff);
+  /* background-color: #3b1a4a; */
+  padding: 50px 4% 70px;
+}
+
+.sc-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #e4d9c8;
+  border-radius: 24px;
+  padding: 40px 45px;
+}
+
+.sc-card h2 {
+  font-family: Georgia, "Playfair Display", serif;
+  font-size: 34px;
+  color: #d34504;
+  margin: 0 0 10px;
+}
+
+.sc-sub {
+  color: #6b5f55;
+  font-size: 15px;
+  margin: 0 0 40px;
+}
+
+/* ---- 4 steps ---- */
+.sc-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.sc-step {
+  text-align: center;
+}
+
+.sc-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #ece2d4;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+}
+
+.sc-step p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ---- don't row ---- */
+.sc-donts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  border-top: 1px solid #e4d9c8;
+  padding-top: 24px;
+}
+
+.sc-dont {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sc-dont-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f7e3e0;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+
+.sc-dont-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #c0392b;
+  margin-bottom: 2px;
+}
+
+.sc-dont p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ---- responsive ---- */
+@media (max-width: 900px) {
+  .sc-steps, .sc-donts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sc-card { padding: 30px 20px; }
+}
+
+@media (max-width: 500px) {
+  .sc-steps, .sc-donts {
+    grid-template-columns: 1fr;
+  }
+}
