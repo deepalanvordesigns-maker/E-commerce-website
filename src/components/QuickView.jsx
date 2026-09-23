@@ -1,14 +1,20 @@
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 import "./QuickView.css";
 
 export default function QuickView({ product, onClose }) {
   const { addToCart } = useCart();
+    const navigate = useNavigate();  
   const [imgIdx, setImgIdx] = useState(0);
   const [color, setColor] = useState(product.colors?.[0]?.name ?? null);
   const [size, setSize] = useState(null);
   const [qty, setQty] = useState(1);
 
+
+ 
+
+ 
   if (!product) return null;
 
   const images = product.images ?? [product.img];
@@ -20,13 +26,18 @@ export default function QuickView({ product, onClose }) {
     onClose();
   };
 
+  const handleBuyNow = () => {         
+    addToCart({ ...product, color, size, qty });
+    onClose();
+    navigate("/checkout");
+  };
   return (
     <div className="qv-overlay" onClick={onClose}>
       <div className="qv-modal" onClick={(e) => e.stopPropagation()}>
         <button className="qv-close" onClick={onClose}>✕</button>
 
         <div className="qv-body">
-          {/* ---- Left: gallery ---- */}
+       
           <div className="qv-gallery">
             <button className="qv-nav left" onClick={() => setImgIdx((i) => (i === 0 ? images.length - 1 : i - 1))}>‹</button>
             <div className="qv-main-img">
@@ -47,7 +58,7 @@ export default function QuickView({ product, onClose }) {
             </div>
           </div>
 
-          {/* ---- Right: details ---- */}
+         
           <div className="qv-details">
             <div className="qv-top-row">
               <h2>{product.name}</h2>
@@ -104,10 +115,12 @@ export default function QuickView({ product, onClose }) {
               <p className="qv-total">Total Price: <strong>₹{total}</strong></p>
             </div>
 
+         
+
             <div className="qv-actions">
-              <button className="qv-add" onClick={handleAddToCart}>🛒 Add to Cart</button>
-              <button className="qv-buy" onClick={handleAddToCart}>⚡ Buy It Now</button>
-            </div>
+  <button className="qv-add" onClick={handleAddToCart}>🛒 Add to Cart</button>
+  <button className="qv-buy" onClick={handleBuyNow}>⚡ Buy It Now</button>
+</div>
 
             <div className="qv-trust">
               <span>🛡️ 100% Original</span>
