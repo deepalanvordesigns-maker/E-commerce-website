@@ -3,9 +3,9 @@ import "./Navebar.css";
 
 export default function Navebar() {
   return (
-    
+
     <header className="navebar">
-      <Link  className="logo">YourBrand</Link>
+      <Link className="logo">YourBrand</Link>
 
       <nav className="nav-links">
         <Link to="/" >Home</Link>

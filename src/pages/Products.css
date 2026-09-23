@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-/* ---------- sidebar ---------- */
+
 .pp-sidebar {
   flex: 0 0 260px;
 }
@@ -99,7 +99,7 @@
   margin-right: 4px;
 }
 
-/* ---------- main ---------- */
+
 .pp-main {
   flex: 1;
   min-width: 0;
@@ -221,15 +221,25 @@
   margin-top: 30px;
 }
 
-/* ---------- responsive ---------- */
+
 @media (max-width: 1000px) {
-  .pp-layout { flex-direction: column; }
-  .pp-sidebar { flex: none; }
-  .pp-grid { grid-template-columns: repeat(2, 1fr); }
+  .pp-layout {
+    flex-direction: column;
+  }
+
+  .pp-sidebar {
+    flex: none;
+  }
+
+  .pp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 550px) {
-  .pp-grid { grid-template-columns: 1fr; }
+  .pp-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pp-thumb {

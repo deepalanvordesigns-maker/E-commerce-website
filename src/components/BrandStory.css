@@ -5,8 +5,7 @@
   gap: 40px;
   padding: 60px 8%;
   width: 100%;
-  /* background: #3b1a4a; */
-  /* min-height: 100vh; */
+  
 }
 
 .story-text {
@@ -25,7 +24,6 @@
 
 .story-text p {
   font-size: 15px;
-  /* color: #ddd; */
   margin-bottom: 25px;
 }
 
@@ -68,7 +66,7 @@
   border-radius: 12px;
 }
 
-/* mobile */
+
 @media (max-width: 768px) {
   .story {
     flex-direction: column;

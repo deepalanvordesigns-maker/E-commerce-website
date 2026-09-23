@@ -35,7 +35,7 @@
   letter-spacing: 2px;
 }
 
-/* stats row */
+
 .br-stats {
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@
   color: #777;
 }
 
-/* review cards */
+
 .br-reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -110,7 +110,7 @@
   color: #888;
 }
 
-/* nav arrows */
+
 .br-nav {
   display: flex;
   justify-content: center;
@@ -137,7 +137,7 @@
   cursor: not-allowed;
 }
 
-/* responsive */
+
 @media (max-width: 900px) {
   .br-reviews { grid-template-columns: 1fr; gap: 30px; }
   .br-stats { gap: 30px; }

@@ -32,7 +32,7 @@ export default function Products() {
   const [maxPrice, setMaxPrice] = useState(10000);
   const [sort, setSort] = useState("default");
   const { cart } = useCart();
-  const [quickView, setQuickView] = useState(null);   // ⚠️ popup-ku state
+  const [quickView, setQuickView] = useState(null);
 
   let filtered = cat ? allProducts.filter((p) => p.category === cat) : allProducts;
   filtered = filtered.filter((p) => p.price <= maxPrice);
@@ -46,7 +46,7 @@ export default function Products() {
     <>
       <section className="products-page">
         <div className="pp-layout">
-          {/* ---- Sidebar ---- */}
+
           <aside className="pp-sidebar">
             <h4>Search</h4>
             <div className="pp-search">
@@ -88,7 +88,7 @@ export default function Products() {
             </ul>
           </aside>
 
-          {/* ---- Main content ---- */}
+
           <main className="pp-main">
             <p className="pp-breadcrumb">Home / Shoes</p>
             <h1>{cat ? titles[cat] : "Shoes"}</h1>

@@ -15,7 +15,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        {/* Brand */}
+
+
+
         <div className="footer-col brand">
           <h3>Your Brand</h3>
           <p>Shoes picked for how they feel, not just how they look.</p>
@@ -27,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Shop */}
+
         <div className="footer-col">
           <h4>Shop</h4>
           <ul>
@@ -39,7 +41,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Help */}
+
         <div className="footer-col">
           <h4>Help</h4>
           <ul>
@@ -51,7 +53,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Newsletter */}
         <div className="footer-col newsletter">
           <h4>Stay in the loop</h4>
           <p>Get updates on new drops and offers.</p>

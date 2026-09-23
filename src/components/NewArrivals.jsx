@@ -41,7 +41,7 @@ const newProducts = [
 export default function NewArrivals() {
   const { cart } = useCart();
   const [picked, setPicked] = useState({});
-  const [quickView, setQuickView] = useState(null);   // ⚠️ popup-ku state
+  const [quickView, setQuickView] = useState(null);
 
   return (
     <section className="na-section">

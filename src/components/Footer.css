@@ -153,7 +153,7 @@
   color: #ff8a6b;
 }
 
-/* responsive */
+
 @media (max-width: 900px) {
   .footer-top {
     grid-template-columns: repeat(2, 1fr);
@@ -164,6 +164,7 @@
   .footer-top {
     grid-template-columns: 1fr;
   }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;

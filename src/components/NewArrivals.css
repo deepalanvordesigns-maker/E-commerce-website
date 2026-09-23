@@ -1,5 +1,5 @@
 .na-section {
-  background:#3b1a4a;
+  background: #3b1a4a;
   padding: 50px 6% 60px;
   text-align: center;
 }
@@ -159,10 +159,15 @@
 }
 
 @media (max-width: 1000px) {
-  .na-grid { grid-template-columns: repeat(2, 1fr); }
+  .na-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 550px) {
-  .na-grid { grid-template-columns: 1fr; }
+  .na-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -171,6 +176,11 @@
 }
 
 @keyframes naFade {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

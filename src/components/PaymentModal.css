@@ -20,7 +20,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* ---- left ---- */
+
 .pm-left {
   flex: 0 0 260px;
   background: linear-gradient(160deg, #3b5bdb, #364fc7);
@@ -66,7 +66,8 @@
   font-size: 26px;
 }
 
-.pm-user-box, .pm-offer-box {
+.pm-user-box,
+.pm-offer-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +93,7 @@
   margin: 10px 0 0;
 }
 
-/* ---- right ---- */
+
 .pm-right {
   flex: 1;
   display: flex;
@@ -240,10 +241,24 @@
 }
 
 @media (max-width: 700px) {
-  .pm-modal { flex-direction: column; }
-  .pm-left { flex: none; }
-  .pm-body { flex-direction: column; }
-  .pm-methods { flex-direction: row; overflow-x: auto; border-right: none; border-bottom: 1px solid #eee; }
+  .pm-modal {
+    flex-direction: column;
+  }
+
+  .pm-left {
+    flex: none;
+  }
+
+  .pm-body {
+    flex-direction: column;
+  }
+
+  .pm-methods {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .pm-qr-img {

@@ -1,5 +1,5 @@
 .wz-wrap {
- background:#3b1a4a;
+  background: #3b1a4a;
   padding: 20px 6% 70px;
   text-align: center;
 }
@@ -7,7 +7,7 @@
 .wz-wrap h2 {
   font-size: 30px;
   font-weight: 600;
-   color: #ff8a6b;
+  color: #ff8a6b;
   margin: 0 0 10px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .wz-sub {
-  color:white;
+  color: white;
   font-size: 14px;
   margin: 0 0 10px;
 }
@@ -29,7 +29,7 @@
   display: inline-block;
   width: 60px;
   height: 2px;
- background: linear-gradient(90deg, #d946ef, #d36b09);
+  background: linear-gradient(90deg, #d946ef, #d36b09);
   margin-bottom: 50px;
 }
 
@@ -46,7 +46,7 @@
   padding: 30px 10px 10px;
 }
 
-/* corner bracket decoration */
+
 .corner {
   position: absolute;
   width: 22px;
@@ -87,7 +87,7 @@
 
 .wz-card h4 {
   font-size: 16px;
- color: #ff8a6b;
+  color: #ff8a6b;
   margin: 0 0 8px;
 }
 
@@ -99,5 +99,8 @@
 }
 
 @media (max-width: 800px) {
-  .wz-grid { grid-template-columns: 1fr; gap: 50px; }
+  .wz-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }

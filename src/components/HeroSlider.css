@@ -9,7 +9,7 @@
 }
 
 .hero-text {
-   
+
     padding: 40px;
     max-width: 460px;
 }
@@ -20,7 +20,7 @@
 }
 
 .tag {
-     color: #ff8a6b;
+    color: #ff8a6b;
     font-size: 20px;
 }
 
@@ -34,14 +34,14 @@
     padding: 10px 22px;
     border: none;
     border-radius: 8px;
-      background:#3b1a4a;
-       color: #ff8a6b;
+    background: #3b1a4a;
+    color: #ff8a6b;
     cursor: pointer;
 }
 
 .hero-btns .outline {
     background: transparent;
     color: black;
-    background-color:white ;
+    background-color: white;
     border: 1px solid white;
 }

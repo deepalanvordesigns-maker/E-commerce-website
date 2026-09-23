@@ -5,11 +5,11 @@ const categories = [
     { name: "WOMEN SHOES", img: "/images/women.jpg" },
     { name: " KIDS SHOES", img: "/images/kids.jpg" },
     { name: " SPORTS SHOES", img: "/images/sport.jpg" },
-       { name: "CLOGS SHOES", img: "/images/cloges.jpg" },
-        { name: "FORMAL SHOES ", img: "/images/formal.jpg" },
-          { name: "SEMI FORMAL SHOES ", img: "/images/semi.jpg" },
-            { name: "LOAFERS SHOES", img: "/images/lofer.jpg" },
-              { name: "HI-NECK SHOES ", img: "/images/hi.jpg" },
+    { name: "CLOGS SHOES", img: "/images/cloges.jpg" },
+    { name: "FORMAL SHOES ", img: "/images/formal.jpg" },
+    { name: "SEMI FORMAL SHOES ", img: "/images/semi.jpg" },
+    { name: "LOAFERS SHOES", img: "/images/lofer.jpg" },
+    { name: "HI-NECK SHOES ", img: "/images/hi.jpg" },
 ];
 
 export default function CategoryList() {

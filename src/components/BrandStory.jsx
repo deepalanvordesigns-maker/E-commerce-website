@@ -10,18 +10,18 @@ export default function BrandStory() {
       </div>
 
       <div className="story-img">
-         <div className="imog">
-        <img className="stor" src="/images/brand1.webp" alt="Brand story" />
+        <div className="imog">
+          <img className="stor" src="/images/brand1.webp" alt="Brand story" />
         </div>
         <div className="imog">
-         <img className="stor" src="/images/brand2.webp" alt="Brand story" />
-         </div>
-         <div className="imog">
+          <img className="stor" src="/images/brand2.webp" alt="Brand story" />
+        </div>
+        <div className="imog">
           <img className="stor" src="/images/brand3.webp" alt="Brand story" />
-          </div>
-          <div className="imog">
-           <img className="stor" src="/images/brand4.webp" alt="Brand story" />
-</div>
+        </div>
+        <div className="imog">
+          <img className="stor" src="/images/brand4.webp" alt="Brand story" />
+        </div>
       </div>
     </section>
   );

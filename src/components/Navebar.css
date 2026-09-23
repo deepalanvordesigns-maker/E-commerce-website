@@ -4,18 +4,18 @@
     justify-content: space-between;
     gap: 20px;
     padding: 14px 30px;
-    background:#3b1a4a;
-      color: #ff8a6b;
-     font-family: "Poppins", Arial, sans-serif;
+    background: #3b1a4a;
+    color: #ff8a6b;
+    font-family: "Poppins", Arial, sans-serif;
 
-  
+
 }
 
 .logo {
     font-size: 34px;
     font-weight: bold;
     color: #ff8a6b;
-     font-family: "Poppins", Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 .nav-links {
@@ -25,8 +25,8 @@
 
 .nav-links a {
     font-size: 17px;
-     color: #ff8a6b;
-      font-family: "Poppins", Arial, sans-serif;
+    color: #ff8a6b;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 .search {
@@ -44,20 +44,21 @@
 }
 
 .badge {
-    background:#ffe3da;
+    background: #ffe3da;
     border-radius: 50%;
     padding: 1px 6px;
     font-size: 13px;
-   
+
 }
 
 .account-btn {
- background:#ffe3da;
+    background: #ffe3da;
     padding: 8px 16px;
     border-radius: 8px;
-     color: black;
+    color: black;
 }
-.logos{
+
+.logos {
     color: #ff8a6b;
     font-size: 20px;
 }

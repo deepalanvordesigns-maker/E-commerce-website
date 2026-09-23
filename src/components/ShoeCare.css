@@ -1,6 +1,5 @@
 .sc-wrap {
   background: linear-gradient(180deg, #f3ece2, #ffffff);
-  /* background-color: #3b1a4a; */
   padding: 50px 4% 70px;
 }
 
@@ -26,7 +25,7 @@
   margin: 0 0 40px;
 }
 
-/* ---- 4 steps ---- */
+
 .sc-steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -56,7 +55,7 @@
   margin: 0;
 }
 
-/* ---- don't row ---- */
+
 .sc-donts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -98,16 +97,22 @@
   font-weight: 600;
 }
 
-/* ---- responsive ---- */
 @media (max-width: 900px) {
-  .sc-steps, .sc-donts {
+
+  .sc-steps,
+  .sc-donts {
     grid-template-columns: repeat(2, 1fr);
   }
-  .sc-card { padding: 30px 20px; }
+
+  .sc-card {
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 500px) {
-  .sc-steps, .sc-donts {
+
+  .sc-steps,
+  .sc-donts {
     grid-template-columns: 1fr;
   }
 }
