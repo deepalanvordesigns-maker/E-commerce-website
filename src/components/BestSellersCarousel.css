@@ -42,7 +42,6 @@
   align-items: stretch;
 }
 
-/* ---------- left promo card ---------- */
 .bsc-promo {
   flex: 0 0 300px;
   background: #fff;
@@ -111,7 +110,7 @@
   border-radius: 20px;
 }
 
-/* ---------- right carousel ---------- */
+
 .bsc-carousel {
   position: relative;
   flex: 1;
@@ -265,7 +264,7 @@
   align-self: flex-start;
 }
 
-/* ---------- arrows ---------- */
+
 .bsc-arrow {
   position: absolute;
   top: 50%;
@@ -292,7 +291,6 @@
 .bsc-arrow.left  { left: -10px; }
 .bsc-arrow.right { right: -10px; }
 
-/* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .bsc-body { flex-direction: column; }
   .bsc-promo { flex: none; }

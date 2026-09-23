@@ -39,8 +39,7 @@ const products = [
 export default function BestSellersCarousel() {
   const trackRef = useRef(null);
   const [liked, setLiked] = useState([]);
-  const [imgIdx, setImgIdx] = useState({}); // { productId: thumbnailIndex }
-
+  const [imgIdx, setImgIdx] = useState({}); 
   const scroll = (dir) => {
     trackRef.current.scrollBy({ left: dir * 320, behavior: "smooth" });
   };
@@ -58,7 +57,7 @@ export default function BestSellersCarousel() {
       </div>
 
       <div className="bsc-body">
-        {/* Left promo card */}
+      
         <div className="bsc-promo">
           <span className="bsc-trending">TRENDING NOW</span>
           <h3>
@@ -75,7 +74,7 @@ export default function BestSellersCarousel() {
           </div>
         </div>
 
-        {/* Right carousel */}
+     
         <div className="bsc-carousel">
           <button className="bsc-arrow left" onClick={() => scroll(-1)} aria-label="Previous">‹</button>
 
