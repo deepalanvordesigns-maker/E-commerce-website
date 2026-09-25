@@ -1,4 +1,4 @@
-.na-section {
+/* .na-section {
   background: #3b1a4a;
   padding: 50px 6% 60px;
   text-align: center;
@@ -182,5 +182,234 @@
 
   to {
     opacity: 1;
+  }
+} */
+
+
+.na-section {
+  background: #3b1a4a;
+  padding: 50px 6% 60px;
+  text-align: center;
+}
+
+.na-title {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: #ee623b;
+}
+
+.na-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff09c1, #1c05eb, #ff8a6b);
+  border-radius: 2px;
+}
+
+.na-sub {
+  margin: 12px 0 30px;
+  color: #f17c16;
+  font-size: 15px;
+}
+
+.na-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.na-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.na-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.na-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f4f4f4;
+}
+
+.na-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: naFade 0.4s ease;
+}
+
+@keyframes naFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.na-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: #2e9e5b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.na-info {
+  padding: 14px;
+}
+
+.na-info h4 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  color: #3b1a4a;
+}
+
+.na-stars {
+  color: #f5a623;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.na-colors {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.na-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  padding: 0;
+}
+
+.na-dot.active {
+  outline: 2px solid #ff8a6b;
+  outline-offset: 2px;
+}
+
+.na-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.na-now {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b1a4a;
+}
+
+.na-mrp {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.na-off {
+  font-size: 13px;
+  color: #2e9e5b;
+  font-weight: 600;
+}
+
+.na-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b1a4a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.na-btn:hover {
+  background: #ff8a6b;
+}
+
+.na-btn.added {
+  background: #2e9e5b;
+}
+
+/* ---------- LAPTOP/TABLET LANDSCAPE (≤1000px) ---------- */
+@media (max-width: 1000px) {
+  .na-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- TABLET (≤789px) ---------- */
+@media (max-width: 789px) {
+  .na-section {
+    padding: 36px 5% 44px;
+  }
+
+  .na-title {
+    font-size: 24px;
+  }
+
+  .na-sub {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .na-grid {
+    gap: 16px;
+  }
+
+  .na-info h4 {
+    font-size: 15px;
+  }
+
+  .na-now {
+    font-size: 16px;
+  }
+}
+
+/* ---------- MOBILE (≤550px) ---------- */
+@media (max-width: 550px) {
+  .na-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .na-section {
+    padding: 30px 5% 40px;
+  }
+
+  .na-title {
+    font-size: 22px;
+  }
+
+  .na-badge {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .na-btn {
+    padding: 12px;
+    font-size: 14px;
   }
 }

@@ -29,14 +29,13 @@ export default function Checkout() {
 
   const handlePaymentSuccess = async () => {
     try {
-      await placeOrder(
+      const order = await placeOrder(
         { firstName: form.firstName, lastName: form.lastName, phone: form.phone, email: form.email },
         { street: form.street, city: form.city, state: form.state, pin: form.pin },
         total
       );
       setShowPayment(false);
-      alert("Payment successful! Order placed and saved. 🎉");
-      navigate("/");
+      navigate("/order-confirmation", { state: { order } });
     } catch (err) {
       alert("Something went wrong placing your order. Please try again.");
     }

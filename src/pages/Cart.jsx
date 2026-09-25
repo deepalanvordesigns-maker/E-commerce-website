@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import "./Cart.css";
 
 export default function Cart() {
   const { cart, updateQty, removeFromCart, cartTotal } = useCart();
+  const navigate = useNavigate();
 
   return (
     <section className="cart-page">
@@ -47,7 +48,7 @@ export default function Cart() {
         <p className="cart-total">
           Total Amount: <span>₹{cartTotal.toFixed(2)}</span>
         </p>
-        <button className="cart-buy" disabled={cart.length === 0}>
+        <button className="cart-buy" disabled={cart.length === 0} onClick={() => navigate("/checkout")}>
           Buy Now
         </button>
       </div>

@@ -1,0 +1,102 @@
+.oc-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f1f8;
+  padding: 40px 20px;
+}
+
+.oc-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(59, 26, 74, 0.12);
+  text-align: center;
+}
+
+.oc-check {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.oc-box h2 {
+  color: #3b1a4a;
+  margin: 0 0 8px;
+}
+
+.oc-sub {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.oc-section {
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding: 14px 0;
+}
+
+.oc-section h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.oc-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.oc-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.oc-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+.oc-total strong {
+  font-size: 20px;
+  color: #3b1a4a;
+}
+
+.oc-delivery {
+  background: #eafaf0;
+  color: #2e9e5b;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin: 18px 0;
+}
+
+.oc-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 13px 30px;
+  background: #ff8a6b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.oc-btn:hover {
+  background: #3b1a4a;
+}

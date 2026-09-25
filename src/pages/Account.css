@@ -1,0 +1,90 @@
+.acc-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f1f8;
+  padding: 40px 20px;
+}
+
+.acc-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(59, 26, 74, 0.1);
+}
+
+.acc-avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #3b1a4a;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.acc-box h2 {
+  margin: 0 0 4px;
+  color: #3b1a4a;
+}
+
+.acc-email {
+  color: #888;
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+.acc-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.acc-link {
+  padding: 12px;
+  background: #f6f1f8;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3b1a4a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.acc-link:hover {
+  background: #ece0f0;
+}
+
+.acc-logout {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e63946;
+  background: #fff;
+  color: #e63946;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.acc-logout:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+.acc-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 24px;
+  background: #3b1a4a;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}

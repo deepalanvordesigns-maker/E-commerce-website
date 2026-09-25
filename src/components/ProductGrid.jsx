@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
 import QuickView from "./QuickView";
+import { useWishlist } from "../context/WishlistContext"; 
 import "./ProductGrid.css";
 
 const products = [
@@ -19,6 +20,7 @@ export default function ProductGrid() {
   const [liked, setLiked] = useState([]);
   const [active, setActive] = useState(null);
   const [quickView, setQuickView] = useState(null);
+  const { toggleWishlist, isWishlisted } = useWishlist();
 
   const toggleLike = (id) =>
     setLiked((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
@@ -50,13 +52,12 @@ export default function ProductGrid() {
                 <span className="badge">{p.badge}</span>
 
                 <div className="icons">
-                  <button
-                    className={liked.includes(p.id) ? "icon liked" : "icon"}
-                    title="Wishlist"
-                    onClick={(e) => { e.stopPropagation(); toggleLike(p.id); }}
-                  >
-                    ♥
-                  </button>
+                 <button
+  className={isWishlisted(p.id) ? "icon liked" : "icon"}
+  onClick={(e) => { e.stopPropagation(); toggleWishlist(p); }}
+>
+  ♥
+</button>
                   <button className="icon" title="Share" onClick={(e) => handleShare(e, p)}>
                     ➦
                   </button>

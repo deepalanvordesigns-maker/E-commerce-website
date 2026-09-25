@@ -45,3 +45,90 @@
     background-color: white;
     border: 1px solid white;
 }
+
+
+
+
+
+/* ---------- TABLET (≤ 789px) ---------- */
+@media (max-width: 789px) {
+  .hero {
+    height: 55vh;
+    margin: 0 20px;
+  }
+
+  .hero-text {
+    padding: 30px;
+    max-width: 380px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .hero-btns button {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- MOBILE (≤ 650px) ---------- */
+@media (max-width: 650px) {
+  .hero {
+    height: 60vh;
+    margin: 0 12px;
+    align-items: flex-end;
+    border-radius: 12px;
+  }
+
+  .hero-text {
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
+    border-radius: 0 0 12px 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+    margin: 4px 0 8px;
+    color: #fff;
+  }
+
+  .tag {
+    font-size: 13px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+    color: #eee;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .hero-btns button {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* ---------- SMALL MOBILE (≤ 380px) ---------- */
+@media (max-width: 380px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-text h1 {
+    font-size: 19px;
+  }
+}
